@@ -13,4 +13,8 @@ extension GetNewsRequest {
         GetNewsRequest(keyword: .zero)
     }
     
+    static var random: GetNewsRequest {
+        GetNewsRequest(keyword: .random)
+    }
+    
 }

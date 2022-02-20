@@ -14,9 +14,9 @@ struct GetNewsResponse: Response {
     let totalResults: Int?
     
     // MARK: - BaseResponse Properties
-    let status: String?
-    let code: String?
-    let message: String?
+    var status: String?
+    var code: String?
+    var message: String?
     
     enum CodingKeys: String, CodingKey {
         case news = "articles"

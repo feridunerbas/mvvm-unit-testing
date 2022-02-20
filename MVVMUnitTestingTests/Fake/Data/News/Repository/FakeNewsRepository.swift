@@ -8,10 +8,10 @@
 import Foundation
 @testable import MVVMUnitTesting
 
-struct FakeNewsRepository {
+class FakeNewsRepository {
     
     // MARK: - Fake data
-    let getNewsResult: GetNewsDataResult!
+    var getNewsResult: GetNewsDataResult!
     
 }
 
