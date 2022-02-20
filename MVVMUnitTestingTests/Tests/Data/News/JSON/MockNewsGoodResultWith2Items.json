@@ -1,0 +1,32 @@
+{
+    "status": "ok",
+    "totalResults": 13451,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Les Numériques"
+            },
+            "author": "Benjamin Polge",
+            "title": "Actualité : \"Freinage fantôme\" chez Tesla : le gouvernement américain lance une enquête",
+            "description": "Le bug du \"freinage fantôme\" va déclencher une enquête du régulateur américain de l'automobile. 416 000 véhicules sont potentiellement concernés.",
+            "url": "https://www.lesnumeriques.com/voitures-co/freinage-fantome-chez-tesla-le-gouvernement-americain-lance-une-enquete-n177049.html",
+            "urlToImage": "https://dyw7ncnq1en5l.cloudfront.net/optim/news/17/177049/5fb6aea6-freinage-fantome-chez-tesla-le-gouvernement-americain-lance-une-enquete__1200_630__overflow.jpeg",
+            "publishedAt": "2022-02-20T07:16:00Z",
+            "content": "Un véhicule qui freine brusquement sur autoroute, sans raison apparente : tel est le bug potentiellement identifié par plusieurs conducteurs de voitures de la marque Tesla. Un problème couramment dés… [+1343 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Hwupgrade.it"
+            },
+            "author": null,
+            "title": "Strafalcione di Elon Musk: battuta nazista con Hitler e Trudeau, e poi cancella il post",
+            "description": "Il CEO di SpaceX e Tesla ci è ricascato, pubblicando su Twitter un contenuto decisamente irrispettoso del ricordo delle vittime dell'Olocausto. Ecco com'è andata",
+            "url": "https://www.hwupgrade.it/news/web/strafalcione-di-elon-musk-battuta-nazista-con-hitler-e-trudeau-e-poi-cancella-il-post_104975.html",
+            "urlToImage": "https://www.hwupgrade.it/i/n/MuskMain.jpg",
+            "publishedAt": "2022-02-20T07:01:01Z",
+            "content": "Elon Musk è stato di nuovo protagonista di un infelice episodio sui social. Il CEO di Tesla e SpaceX ha infatti pubblicato su Twitter un meme in cui paragonava il primo ministro canadese Justin Trude… [+1712 chars]"
+        }
+    ]
+}
