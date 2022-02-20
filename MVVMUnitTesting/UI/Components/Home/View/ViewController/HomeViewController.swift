@@ -25,6 +25,11 @@ class HomeViewController: BaseViewController<HomeViewModelProtocol> {
         }
     }
     
+    override func applyLocalization() {
+        super.applyLocalization()
+        navigationItem.title = Strings.home()
+    }
+    
 }
 
 // MARK: - UITableView

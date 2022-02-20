@@ -21,6 +21,7 @@ class BaseViewController<T>: UIViewController {
         baseViewModel?.viewDidLoad()
         bindViewModel()
         subscribeViewModel()
+        applyLocalization()
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -41,9 +42,9 @@ class BaseViewController<T>: UIViewController {
     }
     
     // MARK: - Public Methods
-    func bindViewModel() {
-        
-    }
+    func applyLocalization() {}
+    
+    func bindViewModel() {}
     
     func subscribeViewModel() {
         baseViewModel?.onShowError = { [weak self] error in

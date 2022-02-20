@@ -29,7 +29,7 @@ extension AppDelegate: UIApplicationDelegate {
 private extension AppDelegate {
     
     func setupWindow() {
-        let homeViewController: HomeViewController = resolve()
+        let homeViewController: HomeNavigationController = resolve()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.rootViewController = homeViewController

@@ -10,6 +10,10 @@ import Resolver
 extension Resolver {
     
     static func registerHomeDependencies() {
+        register { _ -> HomeNavigationController in
+            let homeViewController: HomeViewController = resolve()
+            return HomeNavigationController.init(rootViewController: homeViewController)
+        }
         register {
             R.storyboard.home.homeViewController()!
         }
