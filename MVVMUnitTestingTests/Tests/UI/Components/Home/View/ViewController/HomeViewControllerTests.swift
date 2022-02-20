@@ -39,13 +39,13 @@ extension HomeViewControllerTests {
         // When viewmodel signals reloadNews
         spy.reloadNews?()
         // Then View should display 0 rows
-        XCTAssertEqual(sut.tableView(sut.tableView, numberOfRowsInSection: 0), 0)
+        XCTAssertEqual(sut.numberOfSections(in: sut.tableView), 0)
         
     }
     
     func testLoadsViewModelsSectionsWithData() {
         // Given some section data and view is loaded
-        spy.sections = [.random, .random]
+        spy.sections = HomeTableSection.randomCollection
         sut.loadView()
         // When viewmodel signals reloadNews
         spy.reloadNews?()
