@@ -9,4 +9,16 @@ import UIKit
 
 class HomeViewController: BaseViewController<HomeViewModelProtocol> {
     
+    // MARK: - Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
+}
+
+
+extension HomeViewController {
+    
+    func setupTableView() {
+        
+    }
+    
 }

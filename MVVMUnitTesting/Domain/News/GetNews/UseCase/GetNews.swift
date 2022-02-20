@@ -7,21 +7,9 @@
 
 import Foundation
 
-class GetNews {
-    
-}
+typealias GetNewsResult = Result<[News], Error>
+typealias GetNewsCompletion = (GetNewsResult) -> Void
 
-// MARK: - GetNewsUseCase
-extension GetNews: GetNewsUseCase {
-    
-    func callAsFunction(inputs: GetNewsInputs) {
-        
-    }
-    
-}
-
-// MARK: - Private External Extensions
-private extension GetNewsInputs {
-    
-    
+protocol GetNews {
+    func callAsFunction(inputs: GetNewsInputs, completion: @escaping GetNewsCompletion)
 }

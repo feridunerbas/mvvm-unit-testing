@@ -10,7 +10,8 @@ import Resolver
 extension Resolver {
     
     static func registerDomainDependencies() {
-        
+        register { GetNewsUseCase() }
+            .implements(GetNews.self)
     }
     
 }

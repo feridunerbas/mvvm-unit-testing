@@ -7,4 +7,13 @@
 
 import Foundation
 
-protocol HomeViewModelProtocol: BaseViewModelProtocol {}
+protocol HomeViewModelProtocol: BaseViewModelProtocol {
+    
+    // MARK: - Properties
+    var reloadNews: VoidBlock? { get set }
+    var itemViewModels: [HomeTableItem] { get }
+    
+    // MARK: - Functions
+    func selectedItem(atIndexPath indexPath: IndexPath)
+    
+}

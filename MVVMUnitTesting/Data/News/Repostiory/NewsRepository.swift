@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NewsRepository {
-    
+    func getNews(request: GetNewsRequest, completion: @escaping GetNewsDataCompletion)
 }

@@ -28,6 +28,10 @@ private extension Configuration {
 // MARK: - ConfigurationProtocol
 extension Configuration: ConfigurationProtocol {
     
+    var apiDateFormat: String {
+        getValue(for: "apiDateFormat")!
+    }
+    
     var apiBaseUrl: String {
         getValue(for: "apiBaseUrl")!
     }

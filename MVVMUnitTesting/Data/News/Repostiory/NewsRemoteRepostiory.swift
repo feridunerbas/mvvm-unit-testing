@@ -7,6 +7,7 @@
 
 import Foundation
 import Resolver
+import Combine
 
 typealias GetNewsDataResult = Result<GetNewsResponse, Error>
 typealias GetNewsDataCompletion = (GetNewsDataResult) -> Void
@@ -18,9 +19,10 @@ class NewsRemoteRepository: BaseRemoteRepository<NewsApiURLs> {
     
 }
 
+// MARK: - NewsRepository
 extension NewsRemoteRepository: NewsRepository {
     
-    func getAllNews(request: GetNewsRequest, completion: @escaping GetNewsDataCompletion) {
+    func getNews(request: GetNewsRequest, completion: @escaping GetNewsDataCompletion) {
         let request = JSONRequest(url: urls.allURL,
                                   method: .get,
                                   parameters: request.asJSONParameters())

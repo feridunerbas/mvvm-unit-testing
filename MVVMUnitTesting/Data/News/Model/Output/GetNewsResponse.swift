@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct GetNewsResponse: Decodable {
-    let status: String?
-    let totalResults: Int?
+struct GetNewsResponse: Response {
+    
+    // MARK: - GetNewsResponse Properties
     let news: [NewsDataModel]?
+    let totalResults: Int?
+    
+    // MARK: - BaseResponse Properties
+    let status: String?
+    let code: String?
+    let message: String?
 }
