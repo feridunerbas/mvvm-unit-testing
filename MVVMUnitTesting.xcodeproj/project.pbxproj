@@ -43,6 +43,7 @@
 		86C83FC627C2CDCD00E9DE80 /* String+Zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FC527C2CDCD00E9DE80 /* String+Zero.swift */; };
 		86C83FCB27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C83FCA27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json */; };
 		86C83FCF27C2D50500E9DE80 /* MockedNewsErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */; };
+		86C83FD227C2D89E00E9DE80 /* EndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FD127C2D89E00E9DE80 /* EndpointsTests.swift */; };
 		86D88F3727C2480000D09E6F /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D88F3627C2480000D09E6F /* Configuration.plist */; };
 		86D88F3A27C24D8100D09E6F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3927C24D8100D09E6F /* ApiClient.swift */; };
 		86D88F3C27C24DA200D09E6F /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */; };
@@ -152,6 +153,7 @@
 		86C83FC527C2CDCD00E9DE80 /* String+Zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Zero.swift"; sourceTree = "<group>"; };
 		86C83FCA27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNewsGoodResponseWith2Items.json; sourceTree = "<group>"; };
 		86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockedNewsErrorResponse.json; sourceTree = "<group>"; };
+		86C83FD127C2D89E00E9DE80 /* EndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointsTests.swift; sourceTree = "<group>"; };
 		86D88F3627C2480000D09E6F /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		86D88F3927C24D8100D09E6F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 		86C83FB427C2C6D400E9DE80 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				86C83FD027C2D89000E9DE80 /* Endpoints */,
 				86C83FB527C2C6FB00E9DE80 /* News */,
 			);
 			path = Data;
@@ -594,6 +597,14 @@
 				86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		86C83FD027C2D89000E9DE80 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FD127C2D89E00E9DE80 /* EndpointsTests.swift */,
+			);
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
 		86D88F2927C2463600D09E6F /* Data */ = {
@@ -1430,6 +1441,7 @@
 				86C83FA527C2BDC300E9DE80 /* FakeHomeViewModel.swift in Sources */,
 				86C83FB827C2C71700E9DE80 /* NewsRemoteRepositoryTests.swift in Sources */,
 				86C83FA827C2BE1700E9DE80 /* FakeBaseViewModel.swift in Sources */,
+				86C83FD227C2D89E00E9DE80 /* EndpointsTests.swift in Sources */,
 				86C83FC227C2CD6F00E9DE80 /* GetNewsRequest+Zero.swift in Sources */,
 				86C83FAD27C2C36800E9DE80 /* ConfigurationTests.swift in Sources */,
 				86C83F9327C2BAE800E9DE80 /* FakeNewsRepository.swift in Sources */,
