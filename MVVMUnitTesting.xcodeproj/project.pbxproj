@@ -41,7 +41,8 @@
 		86C83FBD27C2CB4D00E9DE80 /* FakeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FBC27C2CB4D00E9DE80 /* FakeResolver.swift */; };
 		86C83FC227C2CD6F00E9DE80 /* GetNewsRequest+Zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FC127C2CD6F00E9DE80 /* GetNewsRequest+Zero.swift */; };
 		86C83FC627C2CDCD00E9DE80 /* String+Zero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FC527C2CDCD00E9DE80 /* String+Zero.swift */; };
-		86C83FCB27C2D09900E9DE80 /* MockNewsGoodResultWith2Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C83FCA27C2D09900E9DE80 /* MockNewsGoodResultWith2Items.json */; };
+		86C83FCB27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C83FCA27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json */; };
+		86C83FCF27C2D50500E9DE80 /* MockedNewsErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */; };
 		86D88F3727C2480000D09E6F /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D88F3627C2480000D09E6F /* Configuration.plist */; };
 		86D88F3A27C24D8100D09E6F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3927C24D8100D09E6F /* ApiClient.swift */; };
 		86D88F3C27C24DA200D09E6F /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */; };
@@ -149,7 +150,8 @@
 		86C83FBC27C2CB4D00E9DE80 /* FakeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResolver.swift; sourceTree = "<group>"; };
 		86C83FC127C2CD6F00E9DE80 /* GetNewsRequest+Zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetNewsRequest+Zero.swift"; sourceTree = "<group>"; };
 		86C83FC527C2CDCD00E9DE80 /* String+Zero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Zero.swift"; sourceTree = "<group>"; };
-		86C83FCA27C2D09900E9DE80 /* MockNewsGoodResultWith2Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNewsGoodResultWith2Items.json; sourceTree = "<group>"; };
+		86C83FCA27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockNewsGoodResponseWith2Items.json; sourceTree = "<group>"; };
+		86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockedNewsErrorResponse.json; sourceTree = "<group>"; };
 		86D88F3627C2480000D09E6F /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		86D88F3927C24D8100D09E6F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
@@ -588,7 +590,8 @@
 		86C83FC727C2D03100E9DE80 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				86C83FCA27C2D09900E9DE80 /* MockNewsGoodResultWith2Items.json */,
+				86C83FCA27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json */,
+				86C83FCE27C2D50500E9DE80 /* MockedNewsErrorResponse.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -1174,7 +1177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C83FAF27C2C37900E9DE80 /* FakeConfiguration.plist in Resources */,
-				86C83FCB27C2D09900E9DE80 /* MockNewsGoodResultWith2Items.json in Resources */,
+				86C83FCF27C2D50500E9DE80 /* MockedNewsErrorResponse.json in Resources */,
+				86C83FCB27C2D09900E9DE80 /* MockNewsGoodResponseWith2Items.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
