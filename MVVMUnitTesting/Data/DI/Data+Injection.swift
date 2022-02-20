@@ -10,7 +10,14 @@ import Resolver
 extension Resolver {
     
     static func registerDataDependencies() {
-        
+        registerApiClient()
+        register { NewsRemoteRepository() }
+            .implements(NewsRepository.self)
+        register { Endpoints() }
+            .implements(EndpointsProtocol.self)
+        register {
+            resolve(EndpointsProtocol.self).newsApiURLs
+        }
     }
     
 }

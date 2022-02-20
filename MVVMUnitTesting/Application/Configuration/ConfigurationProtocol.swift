@@ -9,4 +9,5 @@ import Foundation
 
 protocol ConfigurationProtocol {
     var newsFeedApiKey: String { get }
+    var apiBaseUrl: String { get }
 }

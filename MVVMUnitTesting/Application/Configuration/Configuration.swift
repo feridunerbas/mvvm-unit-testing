@@ -27,5 +27,13 @@ private extension Configuration {
 
 // MARK: - ConfigurationProtocol
 extension Configuration: ConfigurationProtocol {
-    var newsFeedApiKey: String { getValue(for: "newsFeedApiKey")! }
+    
+    var apiBaseUrl: String {
+        getValue(for: "apiBaseUrl")!
+    }
+    
+    var newsFeedApiKey: String {
+        getValue(for: "newsFeedApiKey")!
+    }
+    
 }

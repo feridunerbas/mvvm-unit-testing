@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>apiBaseUrl</key>
+	<string>https://newsapi.org/v2/</string>
 	<key>newsFeedApiKey</key>
 	<string>d1fdd6d1bc5c42e5b7c264beabe0b1f0</string>
 </dict>

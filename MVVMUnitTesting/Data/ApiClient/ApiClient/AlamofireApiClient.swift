@@ -36,14 +36,8 @@ private extension AlamofireAPIClient {
         switch response.result {
         case.success(let data):
             do {
-                let result = try JSONDecoder().decode(JSONResponse<T>.self, from: data)
-                if let error = result.error {
-                    completion(.failure(APIClientError.api(message: error.message, code: error.code)))
-                } else if let data = result.data {
-                    completion(.success(data))
-                } else {
-                    completion(.failure(APIClientError.unexpectedResponse))
-                }
+                let result = try JSONDecoder().decode(T.self, from: data)
+                completion(.success(result))
             } catch let decodingError {
                 completion(.failure(decodingError))
             }
