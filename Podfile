@@ -4,7 +4,8 @@ target 'MVVMUnitTesting' do
   use_frameworks!
 
   # Pods for MVVMUnitTesting
-  pod 'R.swift' 
+  pod 'R.swift'
+  pod 'Resolver' 
 
   target 'MVVMUnitTestingTests' do
     inherit! :search_paths
