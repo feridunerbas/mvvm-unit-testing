@@ -9,7 +9,7 @@ import Resolver
 
 extension Resolver {
     
-    func registerDataDependencies() {
+    static func registerDataDependencies() {
         
     }
     

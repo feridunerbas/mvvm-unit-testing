@@ -5,7 +5,8 @@ target 'MVVMUnitTesting' do
 
   # Pods for MVVMUnitTesting
   pod 'R.swift'
-  pod 'Resolver' 
+  pod 'Resolver'
+  pod 'Alamofire'
 
   target 'MVVMUnitTestingTests' do
     inherit! :search_paths

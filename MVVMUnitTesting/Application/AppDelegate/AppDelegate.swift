@@ -8,15 +8,31 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
     
-    // MARK: - Variables
+    // MARK: - Properties
     var window: UIWindow?
     
+}
+
+// MARK: - UIApplicationDelegate
+extension AppDelegate: UIApplicationDelegate {
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        window?.rootViewController = UIViewController()
+        setupWindow()
         return true
     }
+    
+}
+
+// MARK: - Window
+private extension AppDelegate {
+    
+    func setupWindow() {
+        let homeViewController: HomeViewController = resolve()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = homeViewController
+    }
+    
 }

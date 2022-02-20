@@ -10,7 +10,7 @@ import Resolver
 extension Resolver {
     
     static func registerUIDependencies() {
-        
+        registerHomeDependencies()
     }
     
 }
