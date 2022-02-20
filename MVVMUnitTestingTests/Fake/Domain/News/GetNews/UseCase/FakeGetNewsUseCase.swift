@@ -8,8 +8,8 @@
 import Foundation
 @testable import MVVMUnitTesting
 
-struct FakeGetNewsUseCase {
-    let fakeGetNewsResult: GetNewsResult!
+class FakeGetNewsUseCase {
+    var fakeGetNewsResult: GetNewsResult!
 }
 
 extension FakeGetNewsUseCase: GetNews {

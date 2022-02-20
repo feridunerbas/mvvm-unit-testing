@@ -51,6 +51,10 @@
 		86C83FE227C2E03B00E9DE80 /* GetNewsResponse+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FE127C2E03B00E9DE80 /* GetNewsResponse+Fake.swift */; };
 		86C83FE627C2E0D600E9DE80 /* GetNewsInputs+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FE527C2E0D600E9DE80 /* GetNewsInputs+Fake.swift */; };
 		86C83FE827C2E4A200E9DE80 /* Int+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FE727C2E4A200E9DE80 /* Int+Fake.swift */; };
+		86C83FEE27C2E76700E9DE80 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FED27C2E76700E9DE80 /* HomeViewModelTests.swift */; };
+		86C83FF127C2E93300E9DE80 /* News+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FF027C2E93300E9DE80 /* News+Fake.swift */; };
+		86C83FF327C2E98F00E9DE80 /* Date+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FF227C2E98F00E9DE80 /* Date+Fake.swift */; };
+		86C83FF527C2EA2100E9DE80 /* URL+Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C83FF427C2EA2100E9DE80 /* URL+Fake.swift */; };
 		86D88F3727C2480000D09E6F /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D88F3627C2480000D09E6F /* Configuration.plist */; };
 		86D88F3A27C24D8100D09E6F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3927C24D8100D09E6F /* ApiClient.swift */; };
 		86D88F3C27C24DA200D09E6F /* AlamofireApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */; };
@@ -168,6 +172,10 @@
 		86C83FE127C2E03B00E9DE80 /* GetNewsResponse+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetNewsResponse+Fake.swift"; sourceTree = "<group>"; };
 		86C83FE527C2E0D600E9DE80 /* GetNewsInputs+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GetNewsInputs+Fake.swift"; sourceTree = "<group>"; };
 		86C83FE727C2E4A200E9DE80 /* Int+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Fake.swift"; sourceTree = "<group>"; };
+		86C83FED27C2E76700E9DE80 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		86C83FF027C2E93300E9DE80 /* News+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News+Fake.swift"; sourceTree = "<group>"; };
+		86C83FF227C2E98F00E9DE80 /* Date+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Fake.swift"; sourceTree = "<group>"; };
+		86C83FF427C2EA2100E9DE80 /* URL+Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Fake.swift"; sourceTree = "<group>"; };
 		86D88F3627C2480000D09E6F /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		86D88F3927C24D8100D09E6F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		86D88F3B27C24DA200D09E6F /* AlamofireApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireApiClient.swift; sourceTree = "<group>"; };
@@ -504,6 +512,7 @@
 				86C83FAA27C2C34F00E9DE80 /* Application */,
 				86C83FB427C2C6D400E9DE80 /* Data */,
 				86C83FD627C2DA5D00E9DE80 /* Domain */,
+				86C83FE927C2E71D00E9DE80 /* UI */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -605,6 +614,8 @@
 			children = (
 				86C83FC527C2CDCD00E9DE80 /* String+Fake.swift */,
 				86C83FE727C2E4A200E9DE80 /* Int+Fake.swift */,
+				86C83FF227C2E98F00E9DE80 /* Date+Fake.swift */,
+				86C83FF427C2EA2100E9DE80 /* URL+Fake.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -679,17 +690,58 @@
 		86C83FE327C2E0CA00E9DE80 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86C83FE427C2E0CD00E9DE80 /* Inputs */,
+				86C83FEF27C2E92500E9DE80 /* Output */,
+				86C83FE427C2E0CD00E9DE80 /* Input */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		86C83FE427C2E0CD00E9DE80 /* Inputs */ = {
+		86C83FE427C2E0CD00E9DE80 /* Input */ = {
 			isa = PBXGroup;
 			children = (
 				86C83FE527C2E0D600E9DE80 /* GetNewsInputs+Fake.swift */,
 			);
-			path = Inputs;
+			path = Input;
+			sourceTree = "<group>";
+		};
+		86C83FE927C2E71D00E9DE80 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FEA27C2E74300E9DE80 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		86C83FEA27C2E74300E9DE80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FEB27C2E74900E9DE80 /* Home */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		86C83FEB27C2E74900E9DE80 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FEC27C2E75A00E9DE80 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		86C83FEC27C2E75A00E9DE80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FED27C2E76700E9DE80 /* HomeViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		86C83FEF27C2E92500E9DE80 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				86C83FF027C2E93300E9DE80 /* News+Fake.swift */,
+			);
+			path = Output;
 			sourceTree = "<group>";
 		};
 		86D88F2927C2463600D09E6F /* Data */ = {
@@ -1518,17 +1570,21 @@
 			files = (
 				86C83FD527C2D9F400E9DE80 /* AlamofireApiClientTests.swift in Sources */,
 				86C83FBB27C2C7E800E9DE80 /* FakeApiClient.swift in Sources */,
+				86C83FF327C2E98F00E9DE80 /* Date+Fake.swift in Sources */,
 				86C83FE827C2E4A200E9DE80 /* Int+Fake.swift in Sources */,
 				86C83FC627C2CDCD00E9DE80 /* String+Fake.swift in Sources */,
 				86C83F8F27C2BA7700E9DE80 /* FakeConfiguration.swift in Sources */,
 				86C83FDE27C2DCD200E9DE80 /* NewsDataModel+Fake.swift in Sources */,
 				86C83FE227C2E03B00E9DE80 /* GetNewsResponse+Fake.swift in Sources */,
+				86C83FF127C2E93300E9DE80 /* News+Fake.swift in Sources */,
 				86C83F9627C2BB6D00E9DE80 /* FakeEndpoints.swift in Sources */,
 				86C83FBD27C2CB4D00E9DE80 /* FakeResolver.swift in Sources */,
 				86C83FB327C2C65D00E9DE80 /* R.generated.swift in Sources */,
 				86C83FE627C2E0D600E9DE80 /* GetNewsInputs+Fake.swift in Sources */,
+				86C83FEE27C2E76700E9DE80 /* HomeViewModelTests.swift in Sources */,
 				86C83FE027C2DE8B00E9DE80 /* NewsSourceDataModel+Fake.swift in Sources */,
 				86C83F9F27C2BD3700E9DE80 /* FakeGetNewsUseCase.swift in Sources */,
+				86C83FF527C2EA2100E9DE80 /* URL+Fake.swift in Sources */,
 				86C83FA527C2BDC300E9DE80 /* FakeHomeViewModel.swift in Sources */,
 				86C83FB827C2C71700E9DE80 /* NewsRemoteRepositoryTests.swift in Sources */,
 				86C83FA827C2BE1700E9DE80 /* FakeBaseViewModel.swift in Sources */,
