@@ -14,30 +14,14 @@ protocol APIClient: AnyObject {
     func makeRequest<T: Decodable>(request: JSONRequest, completion: @escaping DecodableCompletion<T>)
 }
 
-struct Response<T: Decodable>: Decodable{
-    let data: T?
-    let error: ApiError?
-}
-
-struct ApiError: Decodable {
-    let message: String
-    let code: Int
-}
-
-enum APIClientError: Error {
-    case unexpectedResponse
-    case api(message: String, code: Int)
-}
-
-extension APIClientError: LocalizedError {
+extension APIClient {
     
-    public var errorDescription: String? {
-        switch self {
-        case .api(let message, _):
-            return message
-        default:
-            return "\(self)"
-        }
+    var configuration: ConfigurationProtocol { resolve() }
+    
+    func commonHeaders() -> [String: String] {
+        [
+            "X-Api-Key": configuration.newsFeedApiKey
+        ]
     }
+    
 }
-

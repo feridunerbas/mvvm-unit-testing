@@ -24,7 +24,7 @@ extension AlamofireAPIClient: APIClient {
             switch response.result {
             case.success(let data):
                 do {
-                    let result = try JSONDecoder().decode(Response<T>.self, from: data)
+                    let result = try JSONDecoder().decode(JSONResponse<T>.self, from: data)
                     if let error = result.error {
                         completion(.failure(APIClientError.api(message: error.message, code: error.code)))
                     } else if let data = result.data {

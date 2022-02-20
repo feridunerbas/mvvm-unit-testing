@@ -22,7 +22,7 @@
 		86D88F4027C24E1400D09E6F /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F3F27C24E1400D09E6F /* JSONRequest.swift */; };
 		86D88F4227C24E2200D09E6F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4127C24E2200D09E6F /* HTTPMethod.swift */; };
 		86D88F4527C24E4B00D09E6F /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4427C24E4B00D09E6F /* AppDelegate+Injection.swift */; };
-		86D88F4827C24ED900D09E6F /* DIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4727C24ED900D09E6F /* DIFunctions.swift */; };
+		86D88F4827C24ED900D09E6F /* DependencyInjectionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4727C24ED900D09E6F /* DependencyInjectionFunctions.swift */; };
 		86D88F4B27C24F0700D09E6F /* Data+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4A27C24F0700D09E6F /* Data+Injection.swift */; };
 		86D88F4E27C24F2900D09E6F /* Domain+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F4D27C24F2900D09E6F /* Domain+Injection.swift */; };
 		86D88F5127C24F3700D09E6F /* UI+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F5027C24F3700D09E6F /* UI+Injection.swift */; };
@@ -34,6 +34,12 @@
 		86D88F6227C251E800D09E6F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6127C251E800D09E6F /* HomeViewModel.swift */; };
 		86D88F6427C251EF00D09E6F /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6327C251EF00D09E6F /* HomeViewModelProtocol.swift */; };
 		86D88F6727C2542100D09E6F /* Home+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6627C2542100D09E6F /* Home+Injection.swift */; };
+		86D88F6B27C2576A00D09E6F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6A27C2576A00D09E6F /* Configuration.swift */; };
+		86D88F6D27C257AB00D09E6F /* Application+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6C27C257AB00D09E6F /* Application+Injection.swift */; };
+		86D88F6F27C257FB00D09E6F /* ConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F6E27C257FB00D09E6F /* ConfigurationProtocol.swift */; };
+		86D88F7127C259B700D09E6F /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F7027C259B700D09E6F /* JSONResponse.swift */; };
+		86D88F7527C25A1400D09E6F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F7427C25A1400D09E6F /* ApiError.swift */; };
+		86D88F7727C25A2900D09E6F /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D88F7627C25A2900D09E6F /* APIClientError.swift */; };
 		A33711E50A560F7BF449DD9E /* Pods_MVVMUnitTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D4BE7BB5208F6D278A68B7 /* Pods_MVVMUnitTesting.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +82,7 @@
 		86D88F3F27C24E1400D09E6F /* JSONRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
 		86D88F4127C24E2200D09E6F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		86D88F4427C24E4B00D09E6F /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
-		86D88F4727C24ED900D09E6F /* DIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFunctions.swift; sourceTree = "<group>"; };
+		86D88F4727C24ED900D09E6F /* DependencyInjectionFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionFunctions.swift; sourceTree = "<group>"; };
 		86D88F4A27C24F0700D09E6F /* Data+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Injection.swift"; sourceTree = "<group>"; };
 		86D88F4D27C24F2900D09E6F /* Domain+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain+Injection.swift"; sourceTree = "<group>"; };
 		86D88F5027C24F3700D09E6F /* UI+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI+Injection.swift"; sourceTree = "<group>"; };
@@ -88,6 +94,12 @@
 		86D88F6127C251E800D09E6F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		86D88F6327C251EF00D09E6F /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		86D88F6627C2542100D09E6F /* Home+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home+Injection.swift"; sourceTree = "<group>"; };
+		86D88F6A27C2576A00D09E6F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		86D88F6C27C257AB00D09E6F /* Application+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Injection.swift"; sourceTree = "<group>"; };
+		86D88F6E27C257FB00D09E6F /* ConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationProtocol.swift; sourceTree = "<group>"; };
+		86D88F7027C259B700D09E6F /* JSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponse.swift; sourceTree = "<group>"; };
+		86D88F7427C25A1400D09E6F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		86D88F7627C25A2900D09E6F /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
 		C8D4BE7BB5208F6D278A68B7 /* Pods_MVVMUnitTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMUnitTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4F3627ADD3F629656C1ACD /* Pods-MVVMUnitTestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMUnitTestingTests.release.xcconfig"; path = "Target Support Files/Pods-MVVMUnitTestingTests/Pods-MVVMUnitTestingTests.release.xcconfig"; sourceTree = "<group>"; };
 		E47E11052BDF4CF8A27AE736 /* Pods-MVVMUnitTesting-MVVMUnitTestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMUnitTesting-MVVMUnitTestingUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMUnitTesting-MVVMUnitTestingUITests/Pods-MVVMUnitTesting-MVVMUnitTestingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,9 +258,10 @@
 			isa = PBXGroup;
 			children = (
 				86D88F4627C24EB600D09E6F /* DI */,
+				86D88F3227C2463600D09E6F /* AppDelegate */,
+				86D88F6927C2576000D09E6F /* Configuration */,
 				86D88F2F27C2463600D09E6F /* Launch */,
 				86D88F3027C2463600D09E6F /* Resources */,
-				86D88F3227C2463600D09E6F /* AppDelegate */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -266,7 +279,6 @@
 			children = (
 				868C06F127C2303300C8B04E /* Assets.xcassets */,
 				868C06F627C2303300C8B04E /* Info.plist */,
-				86D88F3627C2480000D09E6F /* Configuration.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,8 +304,8 @@
 		86D88F3D27C24DCC00D09E6F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86D88F3F27C24E1400D09E6F /* JSONRequest.swift */,
-				86D88F4127C24E2200D09E6F /* HTTPMethod.swift */,
+				86D88F7327C259C800D09E6F /* Output */,
+				86D88F7227C259C300D09E6F /* Input */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,7 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				86D88F4427C24E4B00D09E6F /* AppDelegate+Injection.swift */,
-				86D88F4727C24ED900D09E6F /* DIFunctions.swift */,
+				86D88F6C27C257AB00D09E6F /* Application+Injection.swift */,
+				86D88F4727C24ED900D09E6F /* DependencyInjectionFunctions.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -397,6 +410,35 @@
 				86D88F6627C2542100D09E6F /* Home+Injection.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		86D88F6927C2576000D09E6F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				86D88F3627C2480000D09E6F /* Configuration.plist */,
+				86D88F6A27C2576A00D09E6F /* Configuration.swift */,
+				86D88F6E27C257FB00D09E6F /* ConfigurationProtocol.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		86D88F7227C259C300D09E6F /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				86D88F4127C24E2200D09E6F /* HTTPMethod.swift */,
+				86D88F3F27C24E1400D09E6F /* JSONRequest.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		86D88F7327C259C800D09E6F /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				86D88F7027C259B700D09E6F /* JSONResponse.swift */,
+				86D88F7427C25A1400D09E6F /* ApiError.swift */,
+				86D88F7627C25A2900D09E6F /* APIClientError.swift */,
+			);
+			path = Output;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,11 +704,16 @@
 			files = (
 				86D88F5A27C2515500D09E6F /* BaseViewModelProtocol.swift in Sources */,
 				86D88F5427C2505F00D09E6F /* BaseViewController.swift in Sources */,
-				86D88F4827C24ED900D09E6F /* DIFunctions.swift in Sources */,
+				86D88F4827C24ED900D09E6F /* DependencyInjectionFunctions.swift in Sources */,
+				86D88F6F27C257FB00D09E6F /* ConfigurationProtocol.swift in Sources */,
+				86D88F6B27C2576A00D09E6F /* Configuration.swift in Sources */,
+				86D88F7527C25A1400D09E6F /* ApiError.swift in Sources */,
 				86D88F6227C251E800D09E6F /* HomeViewModel.swift in Sources */,
 				86D88F4B27C24F0700D09E6F /* Data+Injection.swift in Sources */,
 				86D88F5827C2513D00D09E6F /* BaseViewModel.swift in Sources */,
 				86D88F5C27C251AA00D09E6F /* HomeViewController.swift in Sources */,
+				86D88F7727C25A2900D09E6F /* APIClientError.swift in Sources */,
+				86D88F6D27C257AB00D09E6F /* Application+Injection.swift in Sources */,
 				86D88F6427C251EF00D09E6F /* HomeViewModelProtocol.swift in Sources */,
 				86D88F4E27C24F2900D09E6F /* Domain+Injection.swift in Sources */,
 				86D88F4527C24E4B00D09E6F /* AppDelegate+Injection.swift in Sources */,
@@ -675,6 +722,7 @@
 				86D88F4227C24E2200D09E6F /* HTTPMethod.swift in Sources */,
 				86D88F3C27C24DA200D09E6F /* AlamofireApiClient.swift in Sources */,
 				86B9059927C241B3003FB18C /* R.generated.swift in Sources */,
+				86D88F7127C259B700D09E6F /* JSONResponse.swift in Sources */,
 				86D88F3A27C24D8100D09E6F /* ApiClient.swift in Sources */,
 				86D88F6727C2542100D09E6F /* Home+Injection.swift in Sources */,
 				86D88F4027C24E1400D09E6F /* JSONRequest.swift in Sources */,
