@@ -9,11 +9,19 @@ import Foundation
 
 class Configuration {
     
-    private let dictionary: NSMutableDictionary = {
-        let filePath = R.file.configurationPlist.path()!
-        return NSMutableDictionary(contentsOfFile: filePath)!
-    }()
-
+    // MARK: - Properties
+    private let configurationPlistPath: String
+    private lazy var dictionary: NSMutableDictionary = NSMutableDictionary(contentsOfFile: configurationPlistPath)!
+    
+    // MARK: - Init
+    init(configurationPlistPath path: String) {
+        configurationPlistPath = path
+    }
+    
+    init() {
+        configurationPlistPath = R.file.configurationPlist.path()!
+    }
+    
 }
 
 // MARK: - Private methods

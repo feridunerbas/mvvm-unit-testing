@@ -12,6 +12,7 @@ target 'MVVMUnitTesting' do
 
   target 'MVVMUnitTestingTests' do
     inherit! :search_paths
+    pod 'R.swift'
     # Pods for testing
   end
 
