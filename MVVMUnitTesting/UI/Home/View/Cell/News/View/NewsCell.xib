@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,9 +17,76 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="445" height="113"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MAg-9c-Bu7">
+                        <rect key="frame" x="20" y="10" width="405" height="93"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-zl-Y2h">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="93"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vrx-jg-dte">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="66.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Vrx-jg-dte" secondAttribute="height" multiplier="3:2" id="Hdt-NM-YbT"/>
+                                            <constraint firstAttribute="width" constant="100" id="V8O-Ll-E74"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vrx-jg-dte" secondAttribute="trailing" id="IZO-7o-4Fs"/>
+                                    <constraint firstItem="Vrx-jg-dte" firstAttribute="leading" secondItem="4Mc-zl-Y2h" secondAttribute="leading" id="YXp-jM-mEL"/>
+                                    <constraint firstItem="Vrx-jg-dte" firstAttribute="top" secondItem="4Mc-zl-Y2h" secondAttribute="top" id="hbs-8m-Gwr"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lhh-Wj-eOu">
+                                <rect key="frame" x="110" y="0.0" width="295" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIu-2H-Pir">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cz1-p8-TIk">
+                                        <rect key="frame" x="0.0" y="30.5" width="295" height="62.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MAg-9c-Bu7" secondAttribute="trailing" constant="20" id="3ZM-rq-D5O"/>
+                    <constraint firstItem="MAg-9c-Bu7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LDr-O5-DkI"/>
+                    <constraint firstItem="MAg-9c-Bu7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Qiu-1k-qYw"/>
+                    <constraint firstAttribute="bottom" secondItem="MAg-9c-Bu7" secondAttribute="bottom" constant="10" id="Veq-5w-ZUQ"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Cz1-p8-TIk" id="EU3-a1-sAh"/>
+                <outlet property="newsImageView" destination="Vrx-jg-dte" id="NpC-y5-ULt"/>
+                <outlet property="titleLabel" destination="rIu-2H-Pir" id="kHk-oB-Wpp"/>
+            </connections>
             <point key="canvasLocation" x="228.2608695652174" y="136.94196428571428"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -11,7 +11,7 @@ protocol HomeViewModelProtocol: BaseViewModelProtocol {
     
     // MARK: - Properties
     var reloadNews: VoidBlock? { get set }
-    var itemViewModels: [HomeTableItem] { get }
+    var sections: [HomeTableSection] { get }
     
     // MARK: - Functions
     func selectedItem(atIndexPath indexPath: IndexPath)

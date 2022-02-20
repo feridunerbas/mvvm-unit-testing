@@ -9,4 +9,9 @@ import Foundation
 
 protocol NewsCellViewModelProtocol: AnyObject {
     
+    var model: News { get }
+    var imageResource: ImageResource? { get }
+    var title: String? { get }
+    var description: String? { get }
+    
 }

@@ -17,4 +17,12 @@ struct GetNewsResponse: Response {
     let status: String?
     let code: String?
     let message: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case news = "articles"
+        case totalResults
+        case status
+        case code
+        case message
+    }
 }

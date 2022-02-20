@@ -15,7 +15,7 @@ class Endpoints {
     // MARK: - Init
     init() {
         let configuration: ConfigurationProtocol = resolve()
-        baseUrl = configuration.newsFeedApiKey
+        baseUrl = configuration.apiBaseUrl
     }
     
     init(baseUrl url: String) {

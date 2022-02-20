@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (5.5.0)
+  - CocoaDebug (1.7.2)
+  - Kingfisher (7.1.2)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
@@ -7,22 +9,28 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - CocoaDebug
+  - Kingfisher
   - R.swift
   - Resolver
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - CocoaDebug
+    - Kingfisher
     - R.swift
     - R.swift.Library
     - Resolver
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  CocoaDebug: 61cf93ada6ce8f3407507dc01f9b874d91ac1d5c
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
 
-PODFILE CHECKSUM: e1c916b9f12af293cc90a4edc598dce375f8a08e
+PODFILE CHECKSUM: 4faf1a13b6f29edd9746214b9b1ae83b66d3b99c
 
 COCOAPODS: 1.11.2

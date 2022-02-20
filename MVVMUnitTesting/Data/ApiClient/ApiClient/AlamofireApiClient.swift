@@ -20,7 +20,7 @@ extension AlamofireAPIClient: APIClient {
         let params = request.parameters
         let url = request.url
         let method = request.method.asAlamofireHTTPMethod()
-        let headers = HTTPHeaders(request.headers)
+        let headers = HTTPHeaders(request.headers.merged(with: commonHeaders()))
         AF.request(url, method: method, parameters: params, encoding: encoding, headers: headers).responseData { [weak self] (response) in
             self?.handle(afDataResponse: response, completion: completion)
         }

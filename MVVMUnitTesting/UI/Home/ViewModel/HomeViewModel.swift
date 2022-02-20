@@ -14,10 +14,12 @@ class HomeViewModel: BaseViewModel {
     
     // MARK: - HomeViewModelProtocol Properties
     var reloadNews: VoidBlock?
-    var itemViewModels: [HomeTableItem] = []
+    var sections: [HomeTableSection] = []
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
     }
     
 }
@@ -38,13 +40,17 @@ private extension HomeViewModel {
     }
     
     func handle(getNewsSuccess newsCollection: [News]) {
-        itemViewModels = newsCollection.map {
+        let items: [HomeTableItem] = newsCollection.map {
             .regular(cellViewModel: NewsCellViewModel(news: $0))
         }
+        sections = [
+            HomeTableSection(items: items)
+        ]
+        reloadNews?()
     }
     
     func handle(getNewsError error: Error) {
-        
+        showError(error: error)
     }
     
 }
@@ -53,7 +59,7 @@ private extension HomeViewModel {
 extension HomeViewModel: HomeViewModelProtocol {
     
     func selectedItem(atIndexPath indexPath: IndexPath) {
-        
+        // TODO: Prepare detail and show
     }
     
 }
